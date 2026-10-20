@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="photo 个人照片备份工具：使用 rclone，经本人管理的中转服务器，将所选照片和视频上传到本人的 Google 相册。">
+  <title>photo · 个人照片备份</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="wrap"><a class="brand" href="./">photo<span>个人照片备份</span></a><nav aria-label="主导航"><a href="privacy.html">隐私政策</a><a href="terms.html">使用说明</a></nav></header>
+  <main class="wrap">
+    <section class="intro"><p class="eyebrow">PERSONAL PHOTO BACKUP</p><h1>把选定的照片，<br>存入自己的 Google 相册。</h1><p class="lead">photo 使用 rclone 和 Google Photos Library API，经本人管理的中转服务器完成照片和视频备份。仅供本人使用，无公开注册功能。</p><a class="button" href="privacy.html">了解数据如何处理 <span aria-hidden="true">↗</span></a></section>
+    <section aria-labelledby="flow"><p class="eyebrow">工作方式</p><h2 id="flow">三处存储，一条上传路径。</h2><ol class="flow"><li><span>01</span><h3>本地选择</h3><p>本人选定要备份的照片和视频。本地原片继续保留。</p></li><li><span>02</span><h3>服务器中转</h3><p>文件通过 SFTP 上传到本人管理的 Vultr 服务器，按批次暂存。</p></li><li><span>03</span><h3>相册保存</h3><p>服务器使用本人授权的 Google 账号，将媒体上传到 Google 相册。</p></li></ol></section>
+    <section class="details" aria-labelledby="access"><div><p class="eyebrow">GOOGLE 账号授权</p><h2 id="access">权限服务于备份和整理。</h2></div><div><p>首次使用时，由本人在 Google 官方页面登录和授权。本应用请求以下权限：</p><ul><li><code>photoslibrary.appendonly</code>：添加照片和视频。</li><li><code>photoslibrary.readonly.appcreateddata</code>：读取本应用创建的媒体和相册，用于检查上传情况及增量判断。</li><li><code>photoslibrary.edit.appcreateddata</code>：管理本应用创建的相册与媒体信息。</li></ul><p>不请求 Gmail、Google Drive 或联系人权限，也不能据此读取其他应用创建的完整相册图库。</p></div></section>
+    <aside class="notice"><strong>这个网站仅作介绍。</strong><p>本页不接收照片、Google 密码或授权令牌，不提供登录或上传表单。媒体由本人设备及中转服务器上的 rclone 处理。</p></aside>
+  </main>
+  <footer class="wrap"><p>photo · 仅供个人使用</p><p><a href="privacy.html">隐私政策</a><a href="terms.html">使用说明与条款</a></p><p class="muted">更新于 2026-10-20</p></footer>
+</body>
+</html>
