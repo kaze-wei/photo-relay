@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="photo 个人照片备份工具的隐私政策：数据访问、服务器中转、Google 相册存储、保留和撤销授权。"><title>隐私政策 · photo</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header class="wrap"><a class="brand" href="./">photo<span>个人照片备份</span></a><nav aria-label="主导航"><a href="./">首页</a><a href="terms.html">使用说明</a></nav></header>
+  <main class="wrap article"><p class="eyebrow">PRIVACY POLICY</p><h1>隐私政策</h1><p class="muted">更新日期：2026 年 10 月 20 日</p>
+    <p class="lead">photo 是仅供本人使用的照片和视频备份工具。本政策说明 rclone、中转服务器和本介绍网站如何处理与备份有关的数据。</p>
+    <section><h2>1. 使用目的</h2><p>本工具把本人主动选定的本地照片和视频，经本人管理的 Vultr 服务器上传到本人授权的 Google 相册账号，用于个人备份和整理。无公开注册功能，不提供面向其他用户的相册服务。</p></section>
+    <section><h2>2. 访问和处理的数据</h2><p>处理内容包括所选照片、视频、文件名、文件内嵌元数据，以及通过本应用创建的 Google 相册和媒体信息。根据原文件内容，元数据可能包括拍摄日期、设备信息和地理位置。</p><p>Google OAuth 令牌和客户端配置仅用于调用 Google 相册接口。本工具不收集或保存 Google 账号密码。</p></section>
+    <section><h2>3. Google 权限及用途</h2><ul><li><code>photoslibrary.appendonly</code>：向 Google 相册上传媒体。</li><li><code>photoslibrary.readonly.appcreateddata</code>：读取本应用创建的数据，用于查看上传情况和增量判断。</li><li><code>photoslibrary.edit.appcreateddata</code>：管理本应用创建的相册及媒体信息。</li></ul><p>这些权限不用于读取其他应用创建的完整图库，也不请求 Gmail、Google Drive 或联系人权限。</p></section>
+    <section><h2>4. 存储位置和服务提供方</h2><p>本地原始文件保存在本人设备。为完成中转，选定媒体上传到本人管理的 Vultr 服务器；服务器保存暂存副本及上传日志，日志可能包含文件名、上传时间、状态和错误信息。</p><p>OAuth 令牌及客户端配置保存在本人管理的服务器上，配置目录和文件限制为 root 用户访问。媒体随后通过 Google 官方接口上传，存储于本人授权的 Google 相册账号。</p><p>Vultr 和 Google 分别提供服务器基础设施与相册服务，其服务本身的数据处理受各自条款和隐私政策约束。</p></section>
+    <section><h2>5. 数据用途限制</h2><p>Google 用户数据仅用于本人明确选择的备份和整理功能。本工具不出售 Google 用户数据，不将其用于广告投放、广告画像或训练通用人工智能模型。这些说明针对本工具的行为，不代替基础设施提供方自身的服务政策。</p></section>
+    <section><h2>6. 保留和删除</h2><p>脚本不会自动删除本地媒体、服务器暂存媒体或 Google 相册中的媒体。本人核对上传结果后，可手动删除服务器暂存副本和不再需要的日志。本地原片及日志的保留期限由本人管理，Google 相册中的媒体由本人在相册中管理和删除。</p></section>
+    <section><h2>7. 撤销授权和停止使用</h2><p>本人可在 Google 账号的第三方连接或授权管理页面撤销应用权限，也可停止服务器上传任务并删除本工具配置及暂存数据。撤销授权不会自动删除已上传媒体；删除 Google 相册中的照片需另行在相册中操作。</p></section>
+    <section><h2>8. 本介绍网站</h2><p>本网站为静态说明页面，不接收照片、Google 密码或 OAuth 令牌，不提供登录或上传表单，未加入应用自行添加的分析追踪脚本。GitHub Pages 作为网站托管服务，仍可能按其自身政策处理必要的访问日志及基础设施信息。</p></section>
+    <section><h2>9. 联系方式和更新</h2><p>本工具仅供本人使用。有关应用的问题，可通过 Google OAuth 同意页面显示的用户支持邮箱联系应用管理员。</p><p>如以后向其他人开放，或改变权限、数据用途、接收方或托管方式，应先更新本政策及相应配置。</p></section>
+  </main>
+  <footer class="wrap"><p>photo · 仅供个人使用</p><p><a href="./">首页</a><a href="terms.html">使用说明与条款</a></p></footer>
+</body>
+</html>
